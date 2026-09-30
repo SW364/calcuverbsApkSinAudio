@@ -68,3 +68,9 @@ Estudiante hispanohablante aprendiendo estructura de frases en inglés con verbo
   - `assets/images/favicon.png` (256x256)
 - app.json: fondo del splash y adaptiveIcon cambiado de `#000000` a `#F4F5F9`.
 - Nota: ícono/splash nativos solo se ven al generar un build nuevo (no en Expo Go ni preview web).
+
+## Variante "CalcuVerbs Pro" — tier básico sin audio (2026-09-30)
+- name: `CalcuVerbs Pro` · iOS bundleIdentifier y android.package: `com.calcuverbs.pro`.
+- Ícono/splash: se mantienen los mismos de CalcuVerbs Bilingual (sin cambios).
+- Audio DESACTIVADO: `SpeakButton` en `src/components/PracticeScreen.tsx` y `src/components/TitaScreen.tsx` ahora está `disabled`, con ícono `volume-mute` y opacity 0.4. No reproduce audio (tier básico).
+- Nota: cambio de name/package solo se refleja al generar un build nuevo (no en Expo Go ni preview web).

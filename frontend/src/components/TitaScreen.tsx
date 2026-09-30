@@ -49,10 +49,11 @@ function SpeakButton({ onPress, color, bg, testID }: { onPress: () => void; colo
     <Pressable
       testID={testID}
       onPress={onPress}
-      style={({ pressed }) => [styles.speakBtn, { backgroundColor: bg }, pressed && { transform: [{ scale: 0.92 }] }]}
+      disabled
+      style={[styles.speakBtn, { backgroundColor: bg, opacity: 0.4 }]}
       hitSlop={8}
     >
-      <Ionicons name="volume-high" size={18} color={color} />
+      <Ionicons name="volume-mute" size={18} color={color} />
     </Pressable>
   );
 }
